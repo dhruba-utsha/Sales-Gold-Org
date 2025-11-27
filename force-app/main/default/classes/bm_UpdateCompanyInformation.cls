@@ -27,7 +27,8 @@ public class bm_UpdateCompanyInformation {
         Http http = new Http();
         try {
             HttpResponse res = http.send(req);
-            system.debug('resopose status code- '+res.getStatusCode());
+            system.debug('resopose status code------------- '+res.getStatusCode());
+            system.debug('test------------- ');
             if (res.getStatusCode() == 204) {
                 return 'SUCCESS: Company Name updated';
             } else {
